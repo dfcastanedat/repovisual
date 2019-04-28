@@ -20,13 +20,24 @@ Emplear dos [canvas](https://processing.org/reference/PGraphics.html), uno para 
 
 Complete la tabla:
 
-| Integrante | github nick |
-|------------|-------------|
-|            |             |
+|       Integrante      |                 github nick                   |
+|-----------------------|-----------------------------------------------|
+| Diego Alejandro Garcia| [diagarciaar](https://github.com/diagarciaar) |
+| Yesid Alberto Ochoa   | [yaochoal](https://github.com/yaochoal)       |
+| Oscar Ivan Gomez      | [oigomezz](https://github.com/oigomezz)       |
 
 ## Discusión
 
-(describa brevemente las actividades realizadas y los resultados obtenidos)
+* Conversión a escala de grises: Se tomo promedio de los pixeles 
+* Aplicación de algunas máscaras de convolución: Se realizó la aplicacion de 5 mascaras de convolución, las cuales fueron:
+    - Enfoque: Esta mascara potencia los detalles aparentes de una imagen mediante la manipulación informática.
+    - Realce de bordes:  El principal objetivo del realce es resaltar aquellas características de la imagen que por causa del mecanismo de captación o por error hayan quedados emborronados en la imagen. Este tipo de filtros es muy usado como método directo de mejorar una imagen cara a su presentación a un observador humano. Con mucha frecuencia la característica más importante a realzar son las fronteras que definen los objetos presentes en la imagen. 
+    - Repujado:  Técnica de computacion grafica en la que cada píxel de una imagen se reemplaza por un resaltado o una sombra, según los límites claros / oscuros de la imagen original. 
+    - Filtro de Sharpen: ayuda a resaltar los detalles y mejorar los bordes de los objetos en una imagen.
+* (solo para imágenes) Despliegue del histograma.
+* (solo para imágenes) Segmentación de la imagen a partir del histograma.
+* Medición de la eficiencia computacional: En el proceso de medir la eficiencia computacional de los videos se tomo la decicion de incluir un video de extencion .mov de dimensiones de 1280 x 720, en tres tipos distintos de situaciones, una de ellas donde se le colocaria en un punto estatico , otro de ellos se le colocaria siguiendo la pocision del cursor, y la ultima dejando el video en un punto estatico mas con un limite de frames de 30 frameRate.
+Los resultados de este proceso dio que el video muestra un aumento de frames cuando sigue al cursor dado que si se oculta algo del video el proceso de muestreo se reduce. Adicionalmente se nota que en la parte de establecer los frames limites, el video tiende a congelar las imagenes en algunos estados.
 
 ## Entrega
 
