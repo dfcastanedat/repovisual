@@ -20,11 +20,11 @@ Emplear dos [canvas](https://processing.org/reference/PGraphics.html), uno para 
 
 Complete la tabla:
 
-|       Integrante      | github nick |
-|-----------------------|-------------|
-| Diego Alejandro Garcia| diagarciaar |
-| Yesid Alberto Ochoa   | yaochoal    |
-| Oscar Ivan Gomez      | oigomezz    |
+|       Integrante      |                 github nick                   |
+|-----------------------|-----------------------------------------------|
+| Diego Alejandro Garcia| [diagarciaar](https://github.com/diagarciaar) |
+| Yesid Alberto Ochoa   | [yaochoal](https://github.com/yaochoal)       |
+| Oscar Ivan Gomez      | [oigomezz](https://github.com/oigomezz)       |
 
 ## Discusión
 
