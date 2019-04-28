@@ -51,6 +51,7 @@ void draw() {
   }
   
   convolution.updatePixels();
+  //convolution.save("focus.jpg");
   pg.image(convolution,0,0);
   pg.endDraw();
   image(pg, 320, 10);
@@ -71,6 +72,7 @@ void draw() {
   }
   
   convolution.updatePixels();
+  //convolution.save("embossment.jpg");
   pg.image(convolution,0,0);
   pg.endDraw();
   image(pg, 630, 10);
@@ -92,6 +94,7 @@ void draw() {
   }
   
   convolution.updatePixels();
+  //convolution.save("sharpen.jpg");
   pg.image(convolution,0,0);
   pg.endDraw();
   image(pg, 10, 320);
@@ -112,6 +115,7 @@ void draw() {
   }
   
   convolution.updatePixels();
+  //convolution.save("edgeEnhancement.jpg");
   pg.image(convolution,0,0);
   pg.endDraw();
   image(pg, 320, 320);
@@ -132,6 +136,7 @@ void draw() {
   }
   
   convolution.updatePixels();
+  //convolution.save("north.jpg");
   pg.image(convolution,0,0);
   pg.endDraw();
   image(pg, 630, 320);
