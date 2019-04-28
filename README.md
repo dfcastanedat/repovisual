@@ -20,13 +20,20 @@ Emplear dos [canvas](https://processing.org/reference/PGraphics.html), uno para 
 
 Complete la tabla:
 
-| Integrante | github nick |
-|------------|-------------|
-|            |             |
+|       Integrante      | github nick |
+|-----------------------|-------------|
+| Diego Alejandro Garcia| diagarciaar |
+| Yesid Alberto Ochoa   | yaochoal    |
+| Oscar Ivan Gomez      | oigomezz    |
 
 ## Discusión
 
-(describa brevemente las actividades realizadas y los resultados obtenidos)
+* Conversión a escala de grises: Se tomo promedio de los pixeles 
+* Aplicación de algunas máscaras de convolución.
+* (solo para imágenes) Despliegue del histograma.
+* (solo para imágenes) Segmentación de la imagen a partir del histograma.
+* Medición de la eficiencia computacional: El el proceso de medir la eficiencia computacional de los videos se tomo la decicion de incluir un video de extencion .mov de dimensiones de 1280 x 720, en tres tipos distintos de situaciones, una de ellas donde se le colocaria en un punto estatico , otro de ellos se le colocaria siguiendo la pocision del cursor, y la ultima dejando el video en un punto estatico mas con un limite de frames de 30 frameRate.
+Los resultados de este proceso dio que el video muestra un aumento de frames cuando sigue al cursor dado que si se oculta algo del video el proceso de muestreo se reduce. Adicionalmente se nota que en la parte de establecer los frames limites, el video tiende a congelar las imagenes en algunos estados.
 
 ## Entrega
 
