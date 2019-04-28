@@ -31,9 +31,15 @@ Complete la tabla:
 * Conversión a escala de grises: Se tomo promedio de los pixeles 
 * Aplicación de algunas máscaras de convolución: Se realizó la aplicacion de 5 mascaras de convolución, las cuales fueron:
     - Enfoque: Esta mascara potencia los detalles aparentes de una imagen mediante la manipulación informática.
+    + ![Enfoque](/Convolucion/images/focus.jpg)
     - Realce de bordes:  El principal objetivo del realce es resaltar aquellas características de la imagen que por causa del mecanismo de captación o por error hayan quedados emborronados en la imagen. Este tipo de filtros es muy usado como método directo de mejorar una imagen cara a su presentación a un observador humano. Con mucha frecuencia la característica más importante a realzar son las fronteras que definen los objetos presentes en la imagen. 
+    + ![RealceBordes](/Convolucion/images/edgeEnhancement.jpg)
     - Repujado:  Técnica de computacion grafica en la que cada píxel de una imagen se reemplaza por un resaltado o una sombra, según los límites claros / oscuros de la imagen original. 
-    - Filtro de Sharpen: ayuda a resaltar los detalles y mejorar los bordes de los objetos en una imagen.
+    + ![Repujado](/Convolucion/images/embossment.jpg)
+    - Filtro de Sharpen: ayuda a resaltar los detalles y mejorar los bordes de los objetos en una imagen. 
+    + ![Sharpen](/Convolucion/images/sharpen.jpg)
+    - Fitro direccional norte: Se utilizan para detectar estructuras que siguen una determinada dirección en el espacio resaltando el contraste entre los píxeles situados a ambos lados de la estructura.
+    + ![Norte](/Convolucion/images/north.jpg)
 * (solo para imágenes) Despliegue del histograma.
 * (solo para imágenes) Segmentación de la imagen a partir del histograma.
 * Medición de la eficiencia computacional: En el proceso de medir la eficiencia computacional de los videos se tomo la decicion de incluir un video de extencion .mov de dimensiones de 1280 x 720, en tres tipos distintos de situaciones, una de ellas donde se le colocaria en un punto estatico , otro de ellos se le colocaria siguiendo la pocision del cursor, y la ultima dejando el video en un punto estatico mas con un limite de frames de 30 frameRate.
