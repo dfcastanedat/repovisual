@@ -30,7 +30,7 @@ Complete la tabla:
 
 *  **Conversión a escala de grises**: Se aplico la escala de grises a una imagen donde para conseguir este resultado se recorre la imagen pixel a pixel tomando el promedio ponderado de los 3 colores RGB del mismo y reemplazando este nuevo valor promedio por el nuevo pixel obteniendo el resultado final una vez promediados todos los pixeles.
 + ![Escala de grises](/Escala_Grises_Segmentacion_Histograma/images/grises.png)
-*  **Aplicación de algunas máscaras de convolución**: Se realizó la aplicación de 5 mascaras de convolución,recorriendo la imagen pixel a pixel y aplicando acada uno la matriz de convolución respectiva para lograr el filtro o mascara deseado donde los resultados fueron los siguientes:
+*  **Aplicación de algunas máscaras de convolución**: Se realizó la aplicación de 5 mascaras de convolución,recorriendo la imagen pixel a pixel y aplicando a cada uno la matriz de convolución respectiva, esto con el fin de lograr el filtro o mascara deseado donde los resultados fueron los siguientes:
     -  **Enfoque**: Esta mascara potencia los detalles aparentes de una imagen mediante la manipulación informática.
     + ![Enfoque](/Convolucion/images/focus.jpg)
     -  **Realce de bordes**:  El principal objetivo del realce es resaltar aquellas características de la imagen que por causa del mecanismo de captación o por error hayan quedados emborronados en la imagen. Este tipo de filtros es muy usado como método directo de mejorar una imagen cara a su presentación a un observador humano. Con mucha frecuencia la característica más importante a realzar son las fronteras que definen los objetos presentes en la imagen. 
