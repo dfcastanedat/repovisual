@@ -1,3 +1,4 @@
+
 # Taller de análisis de imágenes por software
 
 ## Propósito
@@ -45,9 +46,9 @@ Complete la tabla:
 + ![Histograma](/Escala_Grises_Segmentacion_Histograma/images/histograma.png)
 *  **Segmentación de la imagen a partir del histograma**: Se realizo una segmentación de la imagen a partir del histograma, donde deslizando con la posición del mouse sobre el canvas se visualiza cada sección respectiva del histograma sobre la imagen resaltando esta de color rojo para realizar un análisis mas detallado del mismo.
 + ![Segmentación de Histograma](/Escala_Grises_Segmentacion_Histograma/images/segmentado.png)
-*  **Medición de la eficiencia computacional**:  En el proceso de medir la eficiencia computacional de los vídeos se tomó la decisión de incluir un vídeo de extensión .mov de dimensiones de 1280 x 720, en tres tipos distintos de situaciones, una de ellas donde se le colocaría en un punto estático, otro de ellos se le colocaría siguiendo la posición del cursor, y la última dejando el vídeo en un punto estático más con un límite de frames de 30 frameRate.
+*  **Medición de la eficiencia computacional**:  En el proceso de medir la eficiencia computacional de los vídeos se tomó la decisión de incluir un vídeo de extensión .mov, en seis tipos distintos de situaciones, en cada una de ellas donde se aplicaron cada uno de los filtros.
 
-* Los resultados de este proceso mostraron un aumento de frames cuando sigue al cursor dado que si se oculta algo del vídeo el proceso de muestreo se reduce. Adicionalmente se nota que en la parte de establecer los frames limites, el vídeo tiende a congelar las imágenes en algunos estados.
+* Los resultados de este proceso mostraron una disminución  de frames a medida que aplica los filtros debido a la carga computacional que estos implican. Adicional mente se nota que en la parte de establecer los frames limites, el vídeo tiende a congelar las imágenes en algunos estados.
 
 
 ## Entrega
