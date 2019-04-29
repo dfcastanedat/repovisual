@@ -46,7 +46,7 @@ Complete la tabla:
 + ![Histograma](/Escala_Grises_Segmentacion_Histograma/images/histograma.png)
 *  **Segmentación de la imagen a partir del histograma**: Se realizo una segmentación de la imagen a partir del histograma, donde deslizando con la posición del mouse sobre el canvas se visualiza cada sección respectiva del histograma sobre la imagen resaltando esta de color rojo para realizar un análisis mas detallado del mismo.
 + ![Segmentación de Histograma](/Escala_Grises_Segmentacion_Histograma/images/segmentado.png)
-*  **Medición de la eficiencia computacional**:  En el proceso de medir la eficiencia computacional de los vídeos se tomó la decisión de incluir un vídeo de extensión .mov, en seis tipos distintos de situaciones, en cada una de ellas donde se aplicaron cada uno de los filtros.
+*  **Medición de la eficiencia computacional**:  En el proceso de medir la eficiencia computacional de los vídeos se tomó la decisión de incluir un vídeo de extensión .mov, en seis tipos distintos de situaciones, en donde en cada una de ellas se aplicaron los respectivos filtros.
 
 * Los resultados de este proceso mostraron una disminución  de frames a medida que aplica los filtros debido a la carga computacional que estos implican. Adicional mente se nota que en la parte de establecer los frames limites, el vídeo tiende a congelar las imágenes en algunos estados.
 
