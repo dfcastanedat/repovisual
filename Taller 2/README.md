@@ -21,18 +21,18 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 
 1. Complete la tabla
 
-| Ilusión | Categoria | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
-|---------|-----------|------------|------------------------------------|-----------------------------|
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
+| 		Ilusión			    |  Categoria   | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
+|---------------------------|--------------|------------|------------------------------------|-----------------------------|
+| Puntos sobre un mismo eje | Interactivo  |[Referencia](https://www.lagranimprenta.es/blog/ilusion-visual-puntos-en-circulo.html)| Click con el mouse                                    |                             |
+|                           |              |            |                                    |                             |
+|                           |              |            |                                    |                             |
+|                           |              |            |                                    |                             |
+|                           |              |            |                                    |                             |
+|                           |              |            |                                    |                             |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
 
 ## Entrega
 
-* Hacer [fork](https://help.github.com/articles/fork-a-repo/) de la plantilla. Plazo: 12/5/19 a las 24h.
+* Plazo: 12/5/19 a las 24h.
 * (todos los integrantes) Presentar el trabajo presencialmente en la siguiente sesión de taller.
