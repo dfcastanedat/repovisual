@@ -23,8 +23,8 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 
 | 		Ilusión			        |  Categoria   | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |-------------------------------|--------------|------------|------------------------------------|-----------------------------|
-| Puntos sobre un mismo eje     | Interactivo  |[Referencia](https://www.lagranimprenta.es/blog/ilusion-visual-puntos-en-circulo.html) [Referencia2](https://magnet.xataka.com/ciencia/13-ilusiones-visuales-que-haran-que-tu-cabeza-explote)| Click con el mouse                                    |                             |
-| Espiral generada con cuadrados| Geometricas  |[Referencia](https://www.alamy.es/imagenes/optical-illusion.html?page=10)            | No aplica                                 |  [Referencia] (http://dunadigital.com/processing/2013/08/03/dibujar-una-espiral-partiendo-del-ejemplo-anterior/)  |
+| Puntos sobre un mismo eje     | Interactivo  |[Puntos que simulan movimiento](https://www.lagranimprenta.es/blog/ilusion-visual-puntos-en-circulo.html) [Los puntos que... ¿se mueven?](https://magnet.xataka.com/ciencia/13-ilusiones-visuales-que-haran-que-tu-cabeza-explote)| Click con el mouse                                    |                             |
+| Espiral generada con cuadrados| Geometricas  |[Ilusiones con fractales](http://www.opticalillusionsportal.com/55-mind-blasting-fractal-illusions/)            | No aplica                                 |  [Dibujar una espiral partiendo del punto anterior](http://dunadigital.com/processing/2013/08/03/dibujar-una-espiral-partiendo-del-ejemplo-anterior/)  |
 |                               |              |            |                                    |                             |
 |                               |              |            |                                    |                             |
 |                               |              |            |                                    |                             |
