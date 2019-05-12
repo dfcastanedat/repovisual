@@ -23,7 +23,7 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 
 | 		Ilusión			    |  Categoria   | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |---------------------------|--------------|------------|------------------------------------|-----------------------------|
-| Puntos sobre un mismo eje | Interactivo  |[Referencia](https://www.lagranimprenta.es/blog/ilusion-visual-puntos-en-circulo.html)| Click con el mouse                                    |                             |
+| Puntos sobre un mismo eje | Interactivo  |[Referencia](https://www.lagranimprenta.es/blog/ilusion-visual-puntos-en-circulo.html) [Referencia2](https://magnet.xataka.com/ciencia/13-ilusiones-visuales-que-haran-que-tu-cabeza-explote)| Click con el mouse                                    |                             |
 |                           |              |            |                                    |                             |
 |                           |              |            |                                    |                             |
 |                           |              |            |                                    |                             |
