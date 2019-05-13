@@ -30,8 +30,10 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 | Rectangulos | Psicologicos | [¿Los rectangulos se ven como si estuvieran moviéndose asombrosamente una tras otra?](http://www.flexyourbrain.com/best-optical-illusions/) | Click con el mouse |                             |
 |                               |              |            |                                    |                             |
 
-2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
-Heiring/Wundt : El efecto se da cuando el angulo entre las lineas diagonales u horizontales y su convergencia al centro, distorsiona la rectitud de las mismas dando una ilusión de que estas se curvan.
+2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar.
+
+
+**Heiring/Wundt** : El efecto se da cuando el angulo entre las lineas diagonales u horizontales y su convergencia al centro, distorsiona la rectitud de las mismas dando una ilusión de que estas se curvan.
 
 ## Entrega
 
