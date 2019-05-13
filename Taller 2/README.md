@@ -31,7 +31,17 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 |Mechanical Waves |Movimiento|[Mechanical](https://en.wikipedia.org/wiki/Mechanical_wave)| Click con el mouse|[Muestra circulos en movimiento](https://www.openprocessing.org/sketch/136072)|
 |                               |              |            |                                    |                             |
 
-2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
+2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar.
+
+
+**Heiring/Wundt** : El efecto se da cuando el angulo entre las lineas diagonales u horizontales y su convergencia al centro, distorsiona la rectitud de las mismas dando una ilusión de que estas se curvan.
+
+**Ilusión de Zöllner**: Una serie de líneas ven aparentemente modificado su paralelismo por la influencia de pequeñas rectas oblicuas.
+
+**Ilusión de movimiento**: Una serie de imágenes fijas, como son los fotogramas de una película de cine, puede simular una situación de movimiento real. El cerebro en el proceso de entender movientos o imagenes no procesada, completa o da un sentido varias veces erroneo de lo que observa.
+
+**Fatiga de retina**: Efecto que sucede cuando se observa mucho tiempo algun objeto con colores, esto lleva al cerebro a autocompletar los colores para las figuras similares para bajar los procesamientos sobre el.
+
 
 ## Entrega
 
