@@ -6,7 +6,14 @@ void setup()
 {
      size(800, 800);
 }
-
+void mouseClicked() {
+  if(dibujar_circulo){
+    dibujar_circulo = false;
+  }else{
+    dibujar_circulo = true;
+  }
+ 
+}
 void draw()
 {   
   velocidad_animacion += 0.1f;
