@@ -35,10 +35,8 @@ void draw()
           cuadradosEsquinasI(grado,i,n);
           cuadradosEsquinasI(grado,m,j);
         }
-      }
-      for(int i = 0, j = grado*7; i < grado*6; i += grado,j += grado){
         cuadradosCentroVerticales(grado,i);
-        cuadradosCentroHorizontales(grado,j);
+        cuadradosCentroHorizontales(grado,m);
       }
     }
 } 
