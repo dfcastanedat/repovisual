@@ -35,6 +35,13 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 
 **Heiring/Wundt** : El efecto se da cuando el angulo entre las lineas diagonales u horizontales y su convergencia al centro, distorsiona la rectitud de las mismas dando una ilusión de que estas se curvan.
 
+**Ilusión de Zöllner**: Una serie de líneas ven aparentemente modificado su paralelismo por la influencia de pequeñas rectas oblicuas.
+
+**Ilusión de movimiento**: Una serie de imágenes fijas, como son los fotogramas de una película de cine, puede simular una situación de movimiento real. El cerebro en el proceso de entender movientos o imagenes no procesada, completa o da un sentido varias veces erroneo de lo que observa.
+
+**Fatiga de retina**: Efecto que sucede cuando se observa mucho tiempo algun objeto con colores, esto lleva al cerebro a autocompletar los colores para las figuras similares para bajar los procesamientos sobre el.
+
+
 ## Entrega
 
 * Plazo: 12/5/19 a las 24h.
