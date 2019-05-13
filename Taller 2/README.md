@@ -26,7 +26,7 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 | Puntos sobre un mismo eje     | Interactivo  |[Puntos que simulan movimiento](https://www.lagranimprenta.es/blog/ilusion-visual-puntos-en-circulo.html) [Los puntos que... ¿se mueven?](https://magnet.xataka.com/ciencia/13-ilusiones-visuales-que-haran-que-tu-cabeza-explote)| Click con el mouse                                    |                             |
 | Espiral generada con cuadrados| Geometricas  |[Ilusiones con fractales](http://www.opticalillusionsportal.com/55-mind-blasting-fractal-illusions/)            | No aplica                                 |  [Dibujar una espiral partiendo del punto anterior](http://dunadigital.com/processing/2013/08/03/dibujar-una-espiral-partiendo-del-ejemplo-anterior/)  |
 | Columnas paralelas torcidas   | Geometricas  |[Tiras individuales también se mueven](https://marcianosmx.com/11-ilusiones-opticas-que-te-sacudiran-el-cerebro/)           | No aplica                                   |                             |
-|                               |              |            |                                    |                             |
+| Rellenado de imagen         |       Psicologicas       |     [Filling in the Afterimage after the Image](http://illusionoftheyear.com/2008/05/filling-in-the-afterimage-after-the-image/)       |   No aplica                              |                             |
 |                               |              |            |                                    |                             |
 |                               |              |            |                                    |                             |
 
