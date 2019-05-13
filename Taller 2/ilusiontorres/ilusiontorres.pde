@@ -1,6 +1,14 @@
 float mini;
 int c=0;
 int d = 0;
+boolean efectoilusion = true;
+void mouseClicked() {
+  if(efectoilusion){
+    efectoilusion = false;
+  }else{
+    efectoilusion = true;
+  }
+}
 void setup() {
   size(1000, 500);
   mini=7;
@@ -11,22 +19,24 @@ void draw() {
   stroke(0);
   background(244,0,161);
 
-  for (int i = 20; i<width-20; i+=80) {
+ for (int i = 20; i<width-20; i+=80) {
     c=0;
     for (int j = 20; j<height-40; j+=40) {
-      if (c%2 == 0) {
+     if(efectoilusion){
+       if (c%2 == 0) {
         stroke(255);
       } else {
         stroke(0);
       }
+    }
       rect(i, j, 40, 40);
 
       c++;
     }
   }
 
-
-  for (int i = 20; i<width-20; i+=160) {
+if(efectoilusion){
+ for (int i = 20; i<width-20; i+=160) {
     c=0;
     for (int j = 20; j<height-40; j+=40) {
 
@@ -114,5 +124,5 @@ void draw() {
       }
       d++;
     }
-  }
+  }}
 }
