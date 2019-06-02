@@ -14,8 +14,8 @@ boolean yDirection;
 int n = 4;
 
 // 2. Hints
-boolean triangleHint = true;
-boolean gridHint = true;
+boolean triangleHint = false;
+boolean gridHint = false;
 boolean debug = true;
 boolean antialiasing = false;
 boolean shadow = false;
@@ -24,7 +24,6 @@ String renderer = P3D;
 
 // 4. Window dimension
 int dim = 10;
-
 void settings() {
   size(int(pow(2, dim)), int(pow(2, dim)), renderer);
 }
@@ -35,7 +34,6 @@ void setup() {
     scene.setType(Scene.Type.ORTHOGRAPHIC);
   scene.setRadius(width/2);
   scene.fit(1);
-
   // not really needed here but create a spinning task
   // just to illustrate some nub.timing features. For
   // example, to see how 3D spinning from the horizon
@@ -54,10 +52,8 @@ void setup() {
     }
   };
   scene.registerTask(spinningTask);
-
   node = new Node();
   node.setScaling(width/pow(2, n));
-
   // init the triangle that's gonna be rasterized
   randomizeTriangle();
 }
@@ -80,11 +76,15 @@ float edgeFuction(float v1x, float v1y, float v2x, float v2y, float px, float py
   return (((v2x-v1x)*(py-v1y))-((v2y-v1y)*(px-v1x)));
 }
 boolean inside_triangle(float v1x, float v1y, float v2x, float v2y, float v3x, float v3y, float px, float py) {
-  boolean edge1, edge2, edge3;
-  edge1 = ((((px-v1x)*(v2y-v1y))-((py-v1y)*(v2x-v1x)))>= 0) ?  true :  false;
-  edge2 = ((((px-v2x)*(v3y-v2y))-((py-v2y)*(v3x-v2x)))>= 0) ?  true :  false;
-  edge3 = ((((px-v3x)*(v1y-v3y))-((py-v3y)*(v1x-v3x)))>= 0) ?  true :  false;
-  return edge1&&edge2&&edge3;
+  boolean edge10, edge20, edge30,edge11, edge21, edge31;
+  edge10 = ((((px-v1x)*(v2y-v1y))-((py-v1y)*(v2x-v1x)))>= 0) ?  true :  false;
+  edge20 = ((((px-v2x)*(v3y-v2y))-((py-v2y)*(v3x-v2x)))>= 0) ?  true :  false;
+  edge30 = ((((px-v3x)*(v1y-v3y))-((py-v3y)*(v1x-v3x)))>= 0) ?  true :  false;
+  
+  edge11 = ((((px-v1x)*(v3y-v1y))-((py-v1y)*(v3x-v1x)))>= 0) ?  true :  false;
+  edge21 = ((((px-v3x)*(v2y-v3y))-((py-v3y)*(v2x-v3x)))>= 0) ?  true :  false;
+  edge31 = ((((px-v2x)*(v1y-v2y))-((py-v2y)*(v1x-v2x)))>= 0) ?  true :  false;
+  return edge10&&edge20&&edge30||edge11&&edge21&&edge31;
 }
 // Implement this function to rasterize the triangle.
 // Coordinates are given in the node system which has a dimension of 2^n
@@ -97,9 +97,7 @@ void triangleRaster() {
   float v2y = node.location(v2).y();
   float v3x = node.location(v3).x();
   float v3y = node.location(v3).y();
-  //println(inside_triangle(v1x,v1y,v3x,v3y,v2x,v2y,3,0));
-
-  // Valores minimo y maximo de los pixeles en el triangulo
+  // Valores minimo y maximo de los pixeles en el triangulo encerrado en un rectangulo
   //  |y-
   //x-|  x+ disposicion de pixeles
   //  |y+
@@ -107,10 +105,7 @@ void triangleRaster() {
   int miny=round(min(v1y, v2y, v3y));
   int maxx=round(max(v1x, v2x, v3x));
   int maxy=round(max(v1y, v2y, v3y));
-  //println(minx,miny,maxx,maxy);
   //ciclos que recorrer grilla desde los minimos y maximos "x" y "y"
-
-
   if (debug) {
     pushStyle();
     // Vector 1 rojo
@@ -124,20 +119,22 @@ void triangleRaster() {
     point(round(v3x), round(v3y));
     noStroke();
     int paso;
+    //se recorre el rectangulo que bordea el triangulo
     for (int x=minx; x<maxx; x++) {
       for (int y=miny; y<maxy; y++) {
-        println(inside_triangle(v1x, v1y, v3x, v3y, v2x, v2y, (x), (y)));
         float f12, f23, f31, area, w1, w2, w3;
         float color1=0.0, color2=0.0, color3 =0.0;
+        //se recorre cada pixel en 4 subpixeles para suavizar el coloreado aplicando el antialiasing SSAA
         if(antialiasing){
           paso=4;
           for (float subx=0; subx<1; subx+=(float)1/paso) {
             for (float suby=0; suby<1; suby+=(float)1/paso) {                       
-              if (inside_triangle(v1x, v1y, v3x, v3y, v2x, v2y, (x+subx), (y+suby))) {
+              if (inside_triangle(v1x, v1y, v2x, v2y, v3x, v3y, (x+subx), (y+suby))) {
                 f12 = edgeFuction(v1x, v1y, v2x, v2y, (x+subx), (y+suby));
                 f23 = edgeFuction(v2x, v2y, v3x, v3y, (x+subx), (y+suby));
                 f31 = edgeFuction(v3x, v3y, v1x, v1y, (x+subx), (y+suby));
                 area=abs(f12)+abs(f23)+abs(f31);
+                //calculo de area de color y normalizado
                 w1=(f23)/area;
                 w2=(f31)/area;
                 w3=(f12)/area;
@@ -148,12 +145,14 @@ void triangleRaster() {
             }
         }
         }else{
+          //ciclo que recorre la imagen sin aplicar antialiasing
           paso=1;
-          if (inside_triangle(v1x, v1y, v3x, v3y, v2x, v2y, (x), (y))) {
+          if (inside_triangle(v1x, v1y, v2x, v2y, v3x, v3y, (x), (y))) {
               f12 = edgeFuction(v1x, v1y, v2x, v2y, (x), (y));
               f23 = edgeFuction(v2x, v2y, v3x, v3y, (x), (y));
               f31 = edgeFuction(v3x, v3y, v1x, v1y, (x), (y));
               area=abs(f12)+abs(f23)+abs(f31);
+              //calculo de area de color y normalizado
               w1=(f23)/area;
               w2=(f31)/area;
               w3=(f12)/area;
@@ -165,8 +164,7 @@ void triangleRaster() {
         color1 /= Math.pow(paso, 2);
         color2 /= Math.pow(paso, 2);
         color3 /= Math.pow(paso, 2);
-        //fill(round(color1), round(color2), round(color3));
-        
+        //pintado imagen de color blanco o rgb
         if(shadow){
         fill(round(color1), round(color2), round(color3));
         rect(x, y, 1, 1);
@@ -186,10 +184,6 @@ void triangleRaster() {
 void randomizeTriangle() {
   int low = -width/2;
   int high = width/2;
-  //random(low, high)
-  //v1 = new Vector(-500, -500 );
-  //v2 = new Vector(200, -350);
-  //v3 = new Vector(0, 500);
   v1 = new Vector(random(low, high),random(low, high));
   v2 = new Vector(random(low, high),random(low, high));
   v3 = new Vector(random(low, high),random(low, high));
