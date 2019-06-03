@@ -47,15 +47,15 @@ SSAA SuperSampling Anti-Aliasing
 Se implemento la tecnica del SuperSampling Anti-Aliasing tecnica que suaviza los bordes dentados y pixeleados, en una escena a renderizar. Y en este caso en particular se intento aplicar el mejoramiento de la calidad a partir de la reduccion de espaciado.
 Tras implementar la particion del pixel, este aumento la calidad de la imagen que es n-veces mas grande(dos, cuatro u ocho) segun sea definido. 
 
-[Sin Anti-Aliasing](/Taller%203/images/NoAA.png)
+![Sin Anti-Aliasing](/Taller%203/images/NoAA.png)
 
-[Con Anti-Aliasing](/Taller%203/images/SSAA.png)
+![Con Anti-Aliasing](/Taller%203/images/SSAA.png)
 
 ## Shading
 
 La forma en la que se logro este efecto con una interpolación donde se lograron los colores de acuerdo a su posición dentro del triángulo y su cercanía a los vértices, aplicandolo en este caso sobre los tres colores aplicados a este.Adicionalmente se hizo la conversión del espacio cartesiano a baricéntrico con la funcion de darnos los tres ejes nuevos (alpha, beta, gamma) que fueron utilizados para determinar los colores segun la posición del pixel.
 
-[](/Taller%203/images/Final.png)
+![](/Taller%203/images/Final.png)
 
 
 ## Dificultades 
