@@ -29,6 +29,10 @@ Complete la tabla:
 | Yesid Alberto Ochoa   | [yaochoal](https://github.com/yaochoal)       |
 | Oscar Ivan Gomez      | [oigomezz](https://github.com/oigomezz)       |
 
+## Instrucciones de uso
+
+Al ejecutar este programa, podemos visualizar el shading oprimienso la tecla s, y podemos visualizar el anti-aliasing oprimiendo la tecla a.
+
 
 ## Discusión
 
@@ -39,7 +43,7 @@ Se logró rasterizar el triángulo generado aleatoriamente haciendo uso de las l
 
 Las técnicas usadas para la implementación del anti-aliasing fueron las siguientes:
 
-## SSAA SuperSampling Anti-Aliasing
+SSAA SuperSampling Anti-Aliasing
 
 Se implemento la tecnica del SuperSampling Anti-Aliasing tecnica que suaviza los bordes dentados y pixeleados, en una escena a renderizar. Y en este caso en particular se intento aplicar el mejoramiento de la calidad a partir de la reduccion de espaciado.
 Tras implementar la particion del pixel, este aumento la calidad de la imagen que es n-veces mas grande(dos, cuatro u ocho) segun sea definido. 
@@ -51,6 +55,9 @@ La forma en la que se logro este efecto con una interpolación donde se lograron
 ## Dificultades 
 
 A la hora de la implementacion, y debido a que los vertices del triangulo se generaban de manera aleatoria, no siempre se rasterizaba el triangulo, esto ocurria porque el algoritmo dependia del orden en que se encontraran estos vertices, esto se soluciono modificando el algoritmo.
+
+## Referencias
+* [Supersampling](https://en.wikipedia.org/wiki/Supersampling)
 
 ## Entrega
 
