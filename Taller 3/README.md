@@ -43,6 +43,11 @@ Las técnicas usadas para la implementación del anti-aliasing fueron las siguie
 
 La representación de este mecanismo dentro de la escena se basó en la interpolación de los colores de acuerdo a su posición dentro del triángulo y su cercanía a los vértices. En este caso, se utilizaron los colores RGB ( Red, Green, Blue) para visualizar de mejor manera el contenido de color. Se hizo la conversión del espacio cartesiano a baricéntrico con el propósito de obtener los coeficientes alpha, beta, gamma los cuales fueron utilizados para determinar el rango de color apropiado para pintar el "píxeles".
 
+
+## Dificultades 
+
+A la hora de la implementacion, y debido a que los vertices del triangulo se generaban de manera aleatoria, no siempre se rasterizaba el triangulo, esto ocurria porque el algoritmo dependia del orden en que se encontraran estos vertices, esto se soluciono modificando el algoritmo.
+
 ## Entrega
 
 * Plazo: 2/6/19 a las 24h.
