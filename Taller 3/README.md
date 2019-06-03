@@ -32,17 +32,21 @@ Complete la tabla:
 
 ## Discusión
 
-Se logró rasterizar el triángulo generado aleatoriamente haciendo uso de las librería nub. Luego se realizó la implementación de dos téctnicas de anti-aliasing conocidas como SSAA y posfiltrado mediante el uso de un filtro cónico. Por último se uso el modelo de iluminación shading con el objetivo de interpolar los colores de los vértices del triángulo sobre la grilla de modo tal que la transición de los colores fuese suave.
+Se logró rasterizar el triángulo generado aleatoriamente haciendo uso de las librería nub. Luego se realizó la implementación de dos téctnicas de anti-aliasing conocidas como SSAA. Por último se uso el modelo de iluminación shading con el objetivo de interpolar los colores de los vértices del triángulo sobre la grilla de modo tal que la transición de los colores fuese suave.
 
 
 ## Anti-aliasing
 
 Las técnicas usadas para la implementación del anti-aliasing fueron las siguientes:
 
+## SSAA SuperSampling Anti-Aliasing
+
+Se implemento la tecnica del SuperSampling Anti-Aliasing tecnica que suaviza los bordes dentados y pixeleados, en una escena a renderizar. Y en este caso en particular se intento aplicar el mejoramiento de la calidad a partir de la reduccion de espaciado.
+Tras implementar la particion del pixel, este aumento la calidad de la imagen que es n-veces mas grande(dos, cuatro u ocho) segun sea definido. 
+
 ## Shading
 
-La representación de este mecanismo dentro de la escena se basó en la interpolación de los colores de acuerdo a su posición dentro del triángulo y su cercanía a los vértices. En este caso, se utilizaron los colores RGB ( Red, Green, Blue) para visualizar de mejor manera el contenido de color. Se hizo la conversión del espacio cartesiano a baricéntrico con el propósito de obtener los coeficientes alpha, beta, gamma los cuales fueron utilizados para determinar el rango de color apropiado para pintar el "píxeles".
-
+La forma en la que se logro este efecto con una interpolación donde se lograron los colores de acuerdo a su posición dentro del triángulo y su cercanía a los vértices, aplicandolo en este caso sobre los tres colores aplicados a este.Adicionalmente se hizo la conversión del espacio cartesiano a baricéntrico con la funcion de darnos los tres ejes nuevos (alpha, beta, gamma) que fueron utilizados para determinar los colores segun la poscision del pixel.
 
 ## Dificultades 
 
