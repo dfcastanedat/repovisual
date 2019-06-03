@@ -31,7 +31,7 @@ Complete la tabla:
 
 ## Instrucciones de uso
 
-Al ejecutar este programa, podemos visualizar el shading oprimienso la tecla s, y podemos visualizar el anti-aliasing oprimiendo la tecla a.
+Al ejecutar este programa, podemos visualizar el shading oprimiendo la tecla “s”, y podemos visualizar el anti-aliasing oprimiendo la tecla “a”.
 
 
 ## Discusión
