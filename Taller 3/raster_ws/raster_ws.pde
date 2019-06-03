@@ -25,7 +25,7 @@ String renderer = P3D;
 // 4. Window dimension
 int dim = 10;
 void settings() {
-  size(int(pow(2, dim)), int(pow(2, dim)), renderer);
+  size(int(pow(2, dim))/2, int(pow(2, dim))/2, renderer);
 }
 
 void setup() {
