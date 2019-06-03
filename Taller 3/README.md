@@ -36,7 +36,7 @@ Al ejecutar este programa, podemos visualizar el shading oprimienso la tecla s, 
 
 ## Discusión
 
-Se logró rasterizar el triángulo generado aleatoriamente haciendo uso de las librería nub. Luego se realizó la implementación de dos técnicas de anti-aliasing conocidas como SSAA. Por último se uso el modelo de iluminación shading con el objetivo de interpolar los colores de los vértices del triángulo sobre la grilla de modo tal que la transición de los colores fuese suave.
+Se logró rasterizar el triángulo generado aleatoriamente haciendo uso de la librería nub. Luego se realizó la implementación de dos técnicas de anti-aliasing conocidas como SSAA. Por último se usó el modelo de iluminación shading con el objetivo de interpolar los colores de los vértices del triángulo sobre la grilla de modo tal que la transición de los colores fuese suave.
 
 ## Anti-aliasing
 
@@ -44,8 +44,7 @@ Las técnicas usadas para la implementación del anti-aliasing fueron las siguie
 
 SSAA SuperSampling Anti-Aliasing
 
-Se implemento la tecnica del SuperSampling Anti-Aliasing tecnica que suaviza los bordes dentados y pixeleados, en una escena a renderizar. Y en este caso en particular se intento aplicar el mejoramiento de la calidad a partir de la reduccion de espaciado.
-Tras implementar la particion del pixel, este aumento la calidad de la imagen que es n-veces mas grande(dos, cuatro u ocho) segun sea definido. 
+Se implemento la técnica del SuperSampling Anti-Aliasing técnica que suaviza los bordes dentados y pixelados, en una escena a renderizar. Y en este caso en particular se intentó aplicar el mejoramiento de la calidad a partir de la reducción de espaciado. Tras implementar la partición del pixel, este aumento la calidad de la imagen que es n-veces más grande (dos, cuatro u ocho) según sea definido. 
 
 ## Sin Anti-Aliasing
 ![Sin Anti-Aliasing](/Taller%203/images/NoAA.png)
@@ -55,14 +54,14 @@ Tras implementar la particion del pixel, este aumento la calidad de la imagen qu
 
 ## Shading
 
-La forma en la que se logro este efecto con una interpolación donde se lograron los colores de acuerdo a su posición dentro del triángulo y su cercanía a los vértices, aplicandolo en este caso sobre los tres colores aplicados a este.Adicionalmente se hizo la conversión del espacio cartesiano a baricéntrico con la funcion de darnos los tres ejes nuevos (alpha, beta, gamma) que fueron utilizados para determinar los colores segun la posición del pixel.
+La forma en la que se logró este efecto con una interpolación donde se lograron los colores de acuerdo a su posición dentro del triángulo y su cercanía a los vértices, aplicándolo en este caso sobre los tres colores aplicados a este. Adicionalmente se hizo la conversión del espacio cartesiano a baricéntrico con la función de darnos los tres ejes nuevos (alpha, beta, gamma) que fueron utilizados para determinar los colores según la posición del pixel.
 
 ![](/Taller%203/images/Final.png)
 
 
 ## Dificultades 
 
-A la hora de la implementacion, y debido a que los vertices del triangulo se generaban de manera aleatoria, no siempre se rasterizaba el triangulo, esto ocurria porque el algoritmo dependia del orden en que se encontraran estos vertices, esto se soluciono modificando el algoritmo.
+A la hora de la implementación, y debido a que los vértices del triángulo se generaban de manera aleatoria, no siempre se rasterizaba el triángulo, esto ocurría porque el algoritmo dependía del orden en que se encontraran estos vértices, esto se solucionó modificando el algoritmo.
 
 ## Referencias
 * [Supersampling](https://en.wikipedia.org/wiki/Supersampling)
