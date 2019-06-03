@@ -47,8 +47,10 @@ SSAA SuperSampling Anti-Aliasing
 Se implemento la tecnica del SuperSampling Anti-Aliasing tecnica que suaviza los bordes dentados y pixeleados, en una escena a renderizar. Y en este caso en particular se intento aplicar el mejoramiento de la calidad a partir de la reduccion de espaciado.
 Tras implementar la particion del pixel, este aumento la calidad de la imagen que es n-veces mas grande(dos, cuatro u ocho) segun sea definido. 
 
+##Sin Anti-Aliasing
 ![Sin Anti-Aliasing](/Taller%203/images/NoAA.png)
 
+##Con Anti-Aliasing
 ![Con Anti-Aliasing](/Taller%203/images/SSAA.png)
 
 ## Shading
