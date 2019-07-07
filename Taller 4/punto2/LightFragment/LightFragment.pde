@@ -12,13 +12,14 @@ void setup(){
 void draw() {    
   background(0);
   shader(lightShader);
-  //pointLight(255, 255, 255, width, height/2, 200);
-  pointLight(255, 255, 255, width, height/2, 300);
+
+  pointLight(255, 255, 255, mouseX, mouseY, 250);
   translate(width/2, height/2);
   rotateY(angle);  
   shape(can);  
   angle += 0.01;
 }
+
 
 PShape createCan(float r, float h, int detail) {
   textureMode(NORMAL);
