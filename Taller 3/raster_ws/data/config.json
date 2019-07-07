@@ -10,9 +10,16 @@
     "position": [
       0,
       0,
+<<<<<<< Updated upstream
       443.405029296875
     ]
   },
   "radius": 256,
+=======
+      886.81005859375
+    ]
+  },
+  "radius": 512,
+>>>>>>> Stashed changes
   "type": "ORTHOGRAPHIC"
 }
