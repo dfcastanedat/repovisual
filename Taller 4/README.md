@@ -31,7 +31,16 @@ Ademas para su implementacion se usaron funciones propias de estas como lo son v
 
 ## Light shaders
 
-En el momento implementar luz proveniente de una fuente natural o una fuente puntual, procedimos a implementar al momento de colocar una luz difusa, un enfoque por vertice o por pixel de la luz sobre el objeto, dependiendo de donde si existe regosidad sobre el objeto. iluminar, ademas de lightdir que nos provee la direccion de donde proviene la luz y ecNormal.
+La iluminación de una escena 3D implica colocar una o más fuentes de luz en el espacio y definir sus parámetros.
+
+En el momento implementar luz proveniente de una fuente natural o una fuente puntual, procedimos a implementar al momento de colocar una luz difusa, un enfoque por vertice o por pixel de la luz sobre el objeto, dependiendo de donde si existe regosidad sobre el objeto. iluminar, ademas de lightdir que nos provee la direccion de donde proviene la luz.
+
+La posibilidad de configurar sombreadores personalizados nos permite cambiar los algoritmos de renderización predeterminados para aquellos que son más sofisticados o generan estilos visuales específicos.
+
+## Bump mapping
+
+Es una técnica de gráficos computacionales 3D, que consiste en dar un aspecto rugoso a las superficies de los objetos. Esta técnica modifica las normales de la superficie sin cambiar su geometría. El bump mapping cambia la perpendicularidad por otras normales para lograr el efecto deseado, todo ello sin modificar la topología ni la geometría del objeto.
+
 
 ## Entrega
 
