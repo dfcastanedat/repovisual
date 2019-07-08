@@ -44,6 +44,8 @@ Es una técnica de gráficos computacionales 3D, que consiste en dar un aspecto 
 
 El bump mapping cambia la perpendicularidad por otras normales por medio de una textura que modela como la luz se refleja de la superficie para lograr el efecto deseado, todo ello sin modificar la topología ni la geometría del objeto y maximizando el rendimiento.
 
+## Referencias
+  * [bump mapping](https://docs.unity3d.com/es/current/Manual/StandardShaderMaterialParameterNormalMap.html).
 
 ## Entrega
 
