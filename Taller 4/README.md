@@ -24,7 +24,7 @@ Complete la tabla:
 
 Para esta entrega se implementaron varias tecnicas para el avance de los requerimientos que se colocaron:
 
-##Shaders
+## Shaders
 En el proceso de aplicacion de mascaras de convolucion implemento shaders, en donde se usaron para su uso correcto las variable de tipo uniforme, varying y de atributo.
 
 Ademas para su implementacion se usaron funciones propias de estas como lo son vertex(), modelview(), traslate(), rotate(), shader() y pshape() siendo este ultimo una version de prossesing.   
