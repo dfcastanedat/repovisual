@@ -1,3 +1,4 @@
+
 # Taller de shaders
 
 ## Propósito
@@ -6,7 +7,7 @@ Estudiar los [patrones de diseño de shaders](http://visualcomputing.github.io/S
 
 ## Tarea
 
-1. Hacer un _benchmark_ entre la implementación por software y la de shaders de varias máscaras de convolución aplicadas a imágenes y video.
+1. Hacer un _benchmark_ entre la implementación por software y la de shaders de varias máscaras de convolución aplicadas a imágenes y vídeo.
 2. Implementar un modelo de iluminación que combine luz ambiental con varias fuentes puntuales de luz especular y difusa. Tener presente _factores de atenuación_ para las fuentes de iluminación puntuales.
 3. (grupos de dos o más) Implementar el [bump mapping](https://en.wikipedia.org/wiki/Bump_mapping).
 
@@ -22,26 +23,29 @@ Complete la tabla:
 
 ## Informe
 
-Para esta entrega se implementaron varias tecnicas para el avance de los requerimientos que se colocaron:
+Para esta entrega se implementaron varias técnicas para el avance de los requerimientos que se colocaron:
 
 ## Shaders
-En el proceso de aplicacion de mascaras de convolucion implemento shaders, en donde se usaron para su uso correcto las variable de tipo uniforme para enviar los parametros de la matriz de convolucion, varying y de atributo.
+En el proceso de aplicación de mascaras de convolución implemento shaders con GLSL en la GPU, en donde para enviar la matriz de convolución al fichero.glsl se utilizaron variables de tipo uniforme, y para su implementación se uso utilizo la guía previa de mascaras de convolución mostrada en clase.
 
-Ademas para su implementacion se usaron funciones propias de estas como lo son vertex(), modelview(), traslate(), rotate(), shader() y pshape() siendo este ultimo una version de processing. Adicionalmente los parametros principales para su implementacion fueron lightPosition y vertColor 
+Ademas para su implementación ademas de imágenes se aplico la convolución a vídeo mostrando este en un cilindro donde la mejora de rendimiento fue de un 80%, donde en filtros que se ejecutaban a 15fps en un computador de especificaciones medias por software al aplicar el filtro por hardware este alcanzo unos 60-58fps estables sin mayores problema.
 
 ## Light shaders
 
 La iluminación de una escena 3D implica colocar una o más fuentes de luz en el espacio y definir sus parámetros.
 
-En el momento implementar luz proveniente de una fuente natural o una fuente puntual, procedimos a implementar al momento de colocar una luz difusa, un enfoque por vertice o por pixel de la luz sobre el objeto, dependiendo de donde si existe regosidad sobre el objeto. iluminar, ademas de lightdir que nos provee la direccion de donde proviene la luz.
+En el momento implementar luz proveniente de una fuente natural o una fuente puntual, procedimos a implementar al momento de colocar una luz difusa, un enfoque por vértice o por pixel de la luz sobre el objeto, dependiendo de donde si existe rugosidad sobre el objeto. iluminar, ademas de lightdir que nos provee la dirección de donde proviene la luz.
 
 La posibilidad de configurar sombreadores personalizados nos permite cambiar los algoritmos de renderización predeterminados para aquellos que son más sofisticados o generan estilos visuales específicos.
 
 ## Bump mapping
 
-Es una técnica de gráficos computacionales 3D, que consiste en dar un aspecto rugoso a las superficies de los objetos. Esta técnica modifica las normales de la superficie sin cambiar su geometría. El bump mapping cambia la perpendicularidad por otras normales para lograr el efecto deseado, todo ello sin modificar la topología ni la geometría del objeto.
+Es una técnica de gráficos computacionales 3D, que consiste en dar un aspecto rugoso a las superficies de los objetos. Esta técnica modifica las normales de la superficie sin cambiar su geometría, esta técnica se utiliza para evitar tener muchos detalles en la geometría real del objeto ya que esto reduce el rendimiento de la GPU. 
+
+El bump mapping cambia la perpendicularidad por otras normales por medio de una textura que modela como la luz se refleja de la superficie para lograr el efecto deseado, todo ello sin modificar la topología ni la geometría del objeto y maximizando el rendimiento.
 
 
 ## Entrega
 
 Fecha límite ~~Lunes 1/7/19~~ Domingo 7/7/19 a las 24h. Sustentaciones: 10/7/19 y 11/7/19.
+
