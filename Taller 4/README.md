@@ -27,7 +27,11 @@ Para esta entrega se implementaron varias tecnicas para el avance de los requeri
 ## Shaders
 En el proceso de aplicacion de mascaras de convolucion implemento shaders, en donde se usaron para su uso correcto las variable de tipo uniforme, varying y de atributo.
 
-Ademas para su implementacion se usaron funciones propias de estas como lo son vertex(), modelview(), traslate(), rotate(), shader() y pshape() siendo este ultimo una version de prossesing.   
+Ademas para su implementacion se usaron funciones propias de estas como lo son vertex(), modelview(), traslate(), rotate(), shader() y pshape() siendo este ultimo una version de prossesing. Adicionalmente los parametros principales para su implementacion fueron lightPosition y vertColor 
+
+## Light shaders
+
+En el momento implementar luz proveniente de una fuente natural o una fuente puntual, procedimos a implementar al momento de colocar una luz difusa, un enfoque por vertice o por pixel de la luz sobre el objeto, dependiendo de donde si existe regosidad sobre el objeto. iluminar, ademas de lightdir que nos provee la direccion de donde proviene la luz y ecNormal.
 
 ## Entrega
 
