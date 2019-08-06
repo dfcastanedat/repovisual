@@ -1,6 +1,6 @@
 PShape can;
 float angle;
-
+int atenuation=250;
 PShader lightShader;
 
 void setup(){
@@ -12,15 +12,19 @@ void setup(){
 void draw() {    
   background(0);
   shader(lightShader);
-
-  pointLight(255, 255, 255, mouseX, mouseY, 250);
+  pointLight(255, 255, 255, mouseX, mouseY, atenuation);
   translate(width/2, height/2);
-  rotateY(angle);  
   shape(can);  
   angle += 0.01;
 }
-
-
+void keyPressed() {
+  if (key == '+'){
+    atenuation = atenuation +20;
+  }
+  if (key == '-'){
+    atenuation = atenuation -20;
+  };
+}
 PShape createCan(float r, float h, int detail) {
   textureMode(NORMAL);
   PShape sh = createShape();
